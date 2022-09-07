@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 20px;
+}
+.users-grid{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0px auto;
+}
+.user{
+    padding: 20px;
+    width: 300px;
+    align-items: baseline;
+    margin-left: 30px;
+   
+
+}
+
+.user img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.user a{
+    font-size: large;
+}
+.btn{
+    display: flex;
+    
+    margin:10px ;    
+    margin-left: 20%;
+}
+.btn button{
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.delete{
+    margin-left: -40px;
+    background-color: rgb(228, 44, 44);
+    border-radius: 8px;
+    border: none;
+}
+.update{
+    margin-left: 40px;
+    background-color: rgb(44, 228, 197);
+    border-radius: 8px;
+    border: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+.update:hover{
+    background-color:rgb(0, 255, 213) ;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
+.delete:hover{
+    background-color:rgb(228, 10, 10) ;
+    color: white;
+    width: 100px;
+    height: 35px;
+}
+.update:active{
+    width: 80px;
+    color: black;
+}
+.delete:active{
+    width: 80px;
+    color: black;
+}
+.create{
+    background-color: rgb(33, 54, 245);
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.create:hover{
+    background-color: rgb(63, 80, 241);
+    color: white;
+    width: 90px;
+
+}
+.create:active{
+    width: 70px;
+    color: black;
+}
+.navbar nav{
+    position: relative;
+    background-color: rgb(231, 226, 226);
+    margin: -16px;
+    height: 60px;
+    padding: 8px;
+
+
+}
+.navbar ul{
+    display: flex;
+    margin-left: -40px;
+}
+.navbar ul li{
+    margin-left: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: medium;
+    padding: 1px;
+}
+.navbar h1  {
+    margin-top: -3px;
+    text-transform: uppercase;
+    margin-left: 5px;
+    
+}
+.navbar a{
+    display: flex;
+    transition: 0.1s;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color: white;
+    font-size: larger;
+}
+.abstract{
+    background:url("/src/Images/Shiny.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: -4px -10px;
+    position: fixed;
+    width: 100%;
+    
+}
+.login-box{
+border-radius: 35px;
+background: linear-gradient(145deg, #c0c0c0, #cacaca);
+box-shadow:  30px 30px 50px #999999,
+             -30px -30px 50px #807f7f;
+width:350px;
+height: 400px;
+margin: 6rem auto;
+padding: 2px;
+
+}
+.login-box h1{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.inputes{
+    margin: 8vh auto;
+}
+.inputes input{
+    margin: 2vh auto;
+    display: grid;
+    border: none;
+    height: 50px;
+    background-color: transparent;
+    border-bottom: rgb(80, 80, 80) 3px solid;
+    outline: none;
+    transition: 0.1s;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.inputes-signup input{
+    margin: 3vh auto;
+    display: grid;
+    border: none;
+    height: 50px;
+    background-color: transparent;
+    border-bottom: rgb(80, 80, 80) 3px solid;
+    outline: none;
+    transition: 0.1s;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-box input:focus{
+    border-bottom: rgb(80, 80, 80) 5px solid;
+}
+.login-btn{
+    display: block;
+    margin: 10px auto;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    box-shadow:  1px 1px 20px 1px #5c5a5a;
+    background-color: #d8d8d8;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;         
+}
+ a{
+    text-decoration: none;
+    
+}
+.login-box button:hover{
+    color: white;
+    background-color: #928f8f;
+    
+}
+@media (max-width:900px) {
+    .users-grid{
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 8%;
+        
+    }
+    
+}
+@media (max-width:600px) {
+    .users-grid{
+        grid-template-columns: 1fr;
+        margin: 20%;
+    }
+    
+}
